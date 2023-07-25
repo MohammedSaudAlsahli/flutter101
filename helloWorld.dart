@@ -1,4 +1,4 @@
-void main() {
+main() {
   var test = "this is a test";
   test = "this is new test"; // it will change
   // const test2 = "this is will never change";

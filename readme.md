@@ -67,3 +67,8 @@
 
 - you can use var names = {"name1":"mohammed", "name2":"Saud"}, or Map<String, String> names = {"name1":"mohammed", "name2":"Saud"}
 - it uses the key as index, means name1 is the index for value mohammed, print(names["name1])
+
+# functions
+
+- main(), you need to use it as long as you use dart, you can't run anything not in main function.
+-
