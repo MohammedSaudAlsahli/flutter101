@@ -17,7 +17,7 @@
   comment
   in foure lines \*/
 
-#in strings you have Escape Character, it means you can add something in strings, in python named formated string:
+# in strings you have Escape Character, it means you can add something in strings, in python named formated string:
 
 - \t -> for tab or 4 spases.
 - \n -> for new line in string.
