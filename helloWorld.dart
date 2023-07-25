@@ -75,7 +75,7 @@ void main() {
   /* if statement inside for loop */
   for (var i in human) {
     if (i == 170.1) {
-      print('it is $i');
+      print('it is $i.');
     }
   }
 }
