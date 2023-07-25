@@ -10,10 +10,15 @@ void main() {
   print('test1 is, \'$test\'');
   print('test1 is, \"$test\"');
 
-  var name = 'mohamed';
-  if (name == 'mohammed') {
-    print('this is my name');
-  } else {
-    print('this is not my name');
+  // var name = 'green';
+  // if (name == 'mohammed') {
+  //   print('this is my name');
+  // } else {
+  //   print('this is not my name');
+  // }
+
+  for (var i = 0; i < 5;) {
+    print(i);
+    i++;
   }
 }
