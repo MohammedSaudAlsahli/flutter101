@@ -16,3 +16,19 @@
   is
   comment
   in foure lines \*/
+
+#in strings you have Escape Character, it means you can add something in strings, in python named formated string:
+
+- \t -> for tab or 4 spases.
+- \n -> for new line in string.
+- \' or \" -> to make a qoutation in string.
+- $var -> to call a van inside string.
+
+### this is how to use it in flutter
+
+- print('test1 is, $test');
+- print('test1 is,\\ $test');
+- print('test1 is,\t $test');
+- print('test1 is,\n $test');
+- print('test1 is, \'$test\'');
+- print('test1 is, \"$test\"');
