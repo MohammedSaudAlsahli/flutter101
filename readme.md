@@ -8,7 +8,7 @@
 # how to write a var
 
 - you can use "var" before the name of the var, and you can specified by writing the data type of the var.
-  ex: var name = 'a name';.
+  ex: var name = 'a name';, will never change the datatype, but it can be any datatype.
   ex: String name = 'a name';.
   ex: int age = 25;.
   ex: dynamic age = 25; -> you can change it from int to string because it is dynamic.
@@ -85,4 +85,4 @@
 # dart file structior
 
 - pubspec.yaml -> for libraries .
-- 
+-
