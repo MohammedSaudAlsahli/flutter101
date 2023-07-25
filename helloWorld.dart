@@ -30,9 +30,9 @@ void main() {
   // print(x);
   // var date = DateTime(2020, 10, 10);
   // print(date);
-  print(test('name'));
+//   print(test('name'));
 }
 
-String test(name) {
-  return name;
-}
+// String test(name) {
+//   return name;
+// }

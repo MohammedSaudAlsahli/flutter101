@@ -72,3 +72,12 @@
 
 - main(), you need to use it as long as you use dart, you can't run anything not in main function.
 - if you made a function you need to know how to use it -> function(){print('test');}, or String function(){return 'test';}, or String function(name){return name} -> void main(function('mohammed');)
+
+# built-in function
+
+- var date = DateTime(year, month,day) -> print(date.day) //will print the day.
+- var num = -4 -> print(num.abs()) //will print the abulute number
+- var num = 1.3 -> print(num.ceil()) //will print the اكبر اقرب عدد صحيح
+- var num = 1.3 -> print(num.roud()) //will print the close number, if the number after . is less than 5 will print the close low number, 5 or above will get the close big.
+- var num1 = 2, var num2 = 5 -> print(num1.compareTo(num2)), it will return 1 if num1 is bigger, or 0 if they ==, or -1 if num2 is bigger
+-
