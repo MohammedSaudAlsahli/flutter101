@@ -9,4 +9,11 @@ void main() {
   print('test1 is,\n $test');
   print('test1 is, \'$test\'');
   print('test1 is, \"$test\"');
+
+  var name = 'mohamed';
+  if (name == 'mohammed') {
+    print('this is my name');
+  } else {
+    print('this is not my name');
+  }
 }
