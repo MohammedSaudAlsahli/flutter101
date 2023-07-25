@@ -27,8 +27,8 @@
 ### this is how to use it in flutter
 
 - print('test1 is, $test');
-- print('test1 is,\\ $test');
+- print('test1 is,\\\ $test');
 - print('test1 is,\t $test');
 - print('test1 is,\n $test');
-- print('test1 is, \'$test\'');
-- print('test1 is, \"$test\"');
+- print('test1 is, \\'$test\'');
+- print('test1 is, \\"$test\"');
