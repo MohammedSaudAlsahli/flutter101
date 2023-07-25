@@ -21,7 +21,7 @@
 
 - \t -> for tab or 4 spases.
 - \n -> for new line in string.
-- \' or \" -> to make a qoutation in string.
+- \\' or \\" -> to make a qoutation in string.
 - $var -> to call a van inside string.
 
 ### this is how to use it in flutter
