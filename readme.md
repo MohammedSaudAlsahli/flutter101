@@ -35,3 +35,19 @@
 - print('test1 is,\n $test');
 - print('test1 is, \\'$test\'');
 - print('test1 is, \\"$test\"');
+
+# Operators in dart
+
+- Addition -> +
+- Subtraction -> -
+- Division -> /
+- Multiplication -> \*
+- Greater Than -> >
+- Less Than -> <
+- Greater Than or Equal -> >=
+- Less Then or Equal -> <=
+- Equal -> ==
+- Not Equal -> !=
+- And -> &&
+- Or -> ||
+- Not -> !
