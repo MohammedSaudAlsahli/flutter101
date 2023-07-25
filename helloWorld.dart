@@ -52,13 +52,30 @@
 void main() {
   String name = 'mohammed';
   int age = 25;
-  double hight = 170.0;
+  double hight = 170.1;
   List<dynamic> human = [name, age, hight];
 
-  print(name + 'm');
-  print(age * 2);
-  print(hight / 2);
-  print(human);
-  print('${1 + 1}');
-  print(++age);
+  /* if statement */
+  if (name.length == 10) {
+    print("too long");
+  } else {
+    print('normal name');
+  }
+
+  /* switch cases, look like if statement */
+  switch (hight) {
+    case 170:
+      print("too high");
+      break;
+    case 170.1:
+      print('meh');
+      break;
+  }
+
+  /* if inside for loop */
+  for (var i in human) {
+    if (i == 170.1) {
+      print('it is $i');
+    }
+  }
 }
