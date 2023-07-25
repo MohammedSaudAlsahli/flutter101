@@ -51,3 +51,9 @@
 - And -> && -> need all to be true to return true, otherwise it will return false
 - Or -> || -> if one is true and other is false it will return true
 - Not -> !
+
+# if statement and loops
+
+- in if statement you use if(the comdition){//what you want to do}, but you need to keep the var outside the (), you can use switch to make it in one line and to avoid to write if ("" == ""){}
+- for loop like if, write  for (var i = 0; i < 5;){//what you want to do}
+- while loop is the same but it will run for ever or if the condition breaked, whit (i==0){//what you want to do}
