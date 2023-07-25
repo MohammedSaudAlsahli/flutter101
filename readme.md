@@ -61,7 +61,8 @@
 # lists
 
 - you can use, var names = ['name', 'name'] or List<String> names = ['name', 'name'], it is should be the same data type
-- it uses index, means the first is index 0 and the second is index 1, print(names[0])
+- it uses index, means the first is index 0 and the second is index 1, print(names[0]).
+- to add list you need to add varlist.add(anything).
 
 # maps it is json or dict -\_-
 
