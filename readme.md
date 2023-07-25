@@ -48,6 +48,6 @@
 - Less Then or Equal -> <=
 - Equal -> ==
 - Not Equal -> !=
-- And -> &&
-- Or -> ||
+- And -> && -> need all to be true to return true, otherwise it will return false
+- Or -> || -> if one is true and other is false it will return true
 - Not -> !
