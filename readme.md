@@ -61,5 +61,9 @@
 # lists
 
 - you can use, var names = ['name', 'name'] or List<String> names = ['name', 'name'], it is should be the same data type
+- it uses index, means the first is index 0 and the second is index 1, print(names[0])
 
 # maps it is json or dict -\_-
+
+- you can use var names = {"name1":"mohammed", "name2":"Saud"}, or Map<String, String> names = {"name1":"mohammed", "name2":"Saud"}
+- it uses the key as index, means name1 is the index for value mohammed, print(names["name1])
