@@ -60,4 +60,5 @@ void main() {
   print(hight / 2);
   print(human);
   print('${1 + 1}');
+  print(++age);
 }
