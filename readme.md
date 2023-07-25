@@ -86,3 +86,8 @@
 
 - pubspec.yaml -> for libraries .
 -
+
+# loops
+
+- for loop -> used if want to use range.
+- while loop -> use to specifi a condition.
