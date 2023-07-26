@@ -142,7 +142,7 @@
 // }
 
 void main() {
-  List<String> names = ['Khalid', 'Ali', 'Sameer', 'mohammed', 'this is error'];
+  List<String> names = ['Khalid', 'Ali', 'Sameer', 'mohammed', 'this is error', 'this is error 2'];
   List<double> grades = [99.3, 87.7, 65.7, 59];
   // forLoopFunc(grades, names);
   // print('----------------');
