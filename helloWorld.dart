@@ -142,7 +142,7 @@
 // }
 
 void main() {
-  List<String> names = ['Khalid', 'Ali', 'Sameer', 'mohammed', 'test'];
+  List<String> names = ['Khalid', 'Ali', 'Sameer', 'mohammed', 'this is error'];
   List<double> grades = [99.3, 87.7, 65.7, 59];
   // forLoopFunc(grades, names);
   // print('----------------');
@@ -176,7 +176,7 @@ forLoopFunc(grades, names) {
 
 switchFunc(grades, names) {
   /* for loop with switch cases */
-  for (var index = 0; index < names.length; index++)
+  for (var index = 0; index < names.length; index++) {
     try {
       switch (grades[index]) {
         case < 60:
@@ -189,25 +189,26 @@ switchFunc(grades, names) {
           print('${names[index]}, ${grades[index]}, D+');
           break;
         case >= 70 && < 75:
-          print('${names[index]}, ${grades[index]} C');
+          print('${names[index]}, ${grades[index]}, C');
           break;
         case >= 75 && < 80:
-          print('${names[index]}, ${grades[index]} C+');
+          print('${names[index]}, ${grades[index]}, C+');
           break;
         case >= 80 && < 85:
-          print('${names[index]}, ${grades[index]} B');
+          print('${names[index]}, ${grades[index]}, B');
           break;
         case >= 85 && < 90:
-          print('${names[index]}, ${grades[index]} B+');
+          print('${names[index]}, ${grades[index]}, B+');
           break;
         case >= 90 && < 95:
-          print('${names[index]}, ${grades[index]} A');
+          print('${names[index]}, ${grades[index]}, A');
           break;
         case >= 95 && < 100:
-          print('${names[index]}, ${grades[index]} A+');
+          print('${names[index]}, ${grades[index]}, A+');
           break;
       }
     } on RangeError {
-      print('there is no ${names[index]} or ${grades[index]}');
+      print('there is no name: (${names[index]})');
     }
+  }
 }
