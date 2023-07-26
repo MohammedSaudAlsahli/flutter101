@@ -73,6 +73,7 @@
 
 - main(), you need to use it as long as you use dart, you can't run anything not in main function.
 - if you made a function you need to know how to use it -> function(){print('test');}, or String function(){return 'test';}, or String function(name){return name} -> void main(function('mohammed');)
+-  types of functions 1- void, 2- return data type, 3- parametar, 4- anuniom function
 
 # built-in function
 
