@@ -217,7 +217,7 @@ import 'dart:io';
 void main() {
   print("Enter id: ");
   try {
-    int userInput = int.parse(stdin.readLineSync()!);
+    int userInput = int.parse(stdin.readLineSync()! ?? '0');
     idCardFunc(userInput);
   } on FormatException {
     print('not a number');
