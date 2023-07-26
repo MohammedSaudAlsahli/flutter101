@@ -141,74 +141,96 @@
 //   }
 // }
 
-void main() {
-  List<String> names = ['Khalid', 'Ali', 'Sameer', 'mohammed', 'this is error', 'this is error 2'];
-  List<double> grades = [99.3, 87.7, 65.7, 59];
-  // forLoopFunc(grades, names);
-  // print('----------------');
-  switchFunc(grades, names);
-}
+// void main() {
+//   List<String> names = ['Khalid', 'Ali', 'Sameer', 'mohammed', 'this is error', 'this is error 2'];
+//   List<double> grades = [99.3, 87.7, 65.7, 59];
+//   // forLoopFunc(grades, names);
+//   // print('----------------');
+//   switchFunc(grades, names);
+// }
 
-forLoopFunc(grades, names) {
-  for (var index = 0; index < grades.length; index++) {
-    /* for loop with if statement */
-    if (grades[index] < 60) {
-      print('${names[index]}, ${grades[index]}, F');
-    } else if (grades[index] >= 60 && grades[index] < 65) {
-      print('${names[index]}, ${grades[index]}, D');
-    } else if (grades[index] >= 65 && grades[index] < 70) {
-      print('${names[index]}, ${grades[index]}, D+');
-    } else if (grades[index] >= 70 && grades[index] < 75) {
-      print('${names[index]}, ${grades[index]}, C');
-    } else if (grades[index] >= 75 && grades[index] < 80) {
-      print('${names[index]}, ${grades[index]}, C+');
-    } else if (grades[index] >= 80 && grades[index] < 85) {
-      print('${names[index]}, ${grades[index]}, B');
-    } else if (grades[index] >= 85 && grades[index] < 90) {
-      print('${names[index]}, ${grades[index]}, B+');
-    } else if (grades[index] >= 90 && grades[index] < 95) {
-      print('${names[index]}, ${grades[index]}, A');
-    } else if (grades[index] >= 95 && grades[index] < 100) {
-      print('${names[index]}, ${grades[index]}, A+');
-    }
+// forLoopFunc(grades, names) {
+//   for (var index = 0; index < grades.length; index++) {
+//     /* for loop with if statement */
+//     if (grades[index] < 60) {
+//       print('${names[index]}, ${grades[index]}, F');
+//     } else if (grades[index] >= 60 && grades[index] < 65) {
+//       print('${names[index]}, ${grades[index]}, D');
+//     } else if (grades[index] >= 65 && grades[index] < 70) {
+//       print('${names[index]}, ${grades[index]}, D+');
+//     } else if (grades[index] >= 70 && grades[index] < 75) {
+//       print('${names[index]}, ${grades[index]}, C');
+//     } else if (grades[index] >= 75 && grades[index] < 80) {
+//       print('${names[index]}, ${grades[index]}, C+');
+//     } else if (grades[index] >= 80 && grades[index] < 85) {
+//       print('${names[index]}, ${grades[index]}, B');
+//     } else if (grades[index] >= 85 && grades[index] < 90) {
+//       print('${names[index]}, ${grades[index]}, B+');
+//     } else if (grades[index] >= 90 && grades[index] < 95) {
+//       print('${names[index]}, ${grades[index]}, A');
+//     } else if (grades[index] >= 95 && grades[index] < 100) {
+//       print('${names[index]}, ${grades[index]}, A+');
+//     }
+//   }
+// }
+
+// switchFunc(grades, names) {
+//   /* for loop with switch cases */
+//   for (var index = 0; index < names.length; index++) {
+//     try {
+//       switch (grades[index]) {
+//         case < 60:
+//           print('${names[index]}, ${grades[index]}, F');
+//           break;
+//         case >= 60 && < 65:
+//           print('${names[index]}, ${grades[index]}, D');
+//           break;
+//         case >= 65 && < 70:
+//           print('${names[index]}, ${grades[index]}, D+');
+//           break;
+//         case >= 70 && < 75:
+//           print('${names[index]}, ${grades[index]}, C');
+//           break;
+//         case >= 75 && < 80:
+//           print('${names[index]}, ${grades[index]}, C+');
+//           break;
+//         case >= 80 && < 85:
+//           print('${names[index]}, ${grades[index]}, B');
+//           break;
+//         case >= 85 && < 90:
+//           print('${names[index]}, ${grades[index]}, B+');
+//           break;
+//         case >= 90 && < 95:
+//           print('${names[index]}, ${grades[index]}, A');
+//           break;
+//         case >= 95 && < 100:
+//           print('${names[index]}, ${grades[index]}, A+');
+//           break;
+//       }
+//     } on RangeError {
+//       print('there is no name: (${names[index]})');
+//     }
+//   }
+// }
+import 'dart:io';
+
+void main() {
+  print("Enter id: ");
+  try {
+    int userInput = int.parse(stdin.readLineSync()!);
+    idCardFunc(userInput);
+  } on FormatException {
+    print('not a number');
   }
 }
 
-switchFunc(grades, names) {
-  /* for loop with switch cases */
-  for (var index = 0; index < names.length; index++) {
-    try {
-      switch (grades[index]) {
-        case < 60:
-          print('${names[index]}, ${grades[index]}, F');
-          break;
-        case >= 60 && < 65:
-          print('${names[index]}, ${grades[index]}, D');
-          break;
-        case >= 65 && < 70:
-          print('${names[index]}, ${grades[index]}, D+');
-          break;
-        case >= 70 && < 75:
-          print('${names[index]}, ${grades[index]}, C');
-          break;
-        case >= 75 && < 80:
-          print('${names[index]}, ${grades[index]}, C+');
-          break;
-        case >= 80 && < 85:
-          print('${names[index]}, ${grades[index]}, B');
-          break;
-        case >= 85 && < 90:
-          print('${names[index]}, ${grades[index]}, B+');
-          break;
-        case >= 90 && < 95:
-          print('${names[index]}, ${grades[index]}, A');
-          break;
-        case >= 95 && < 100:
-          print('${names[index]}, ${grades[index]}, A+');
-          break;
-      }
-    } on RangeError {
-      print('there is no name: (${names[index]})');
-    }
+idCardFunc(int userInput) {
+  var myName = 'Mohammed Alsahli';
+  const IDcard = 1102430251;
+
+  if (userInput == IDcard) {
+    print('they are the same');
+  } else {
+    print('they are not the same, your input: $userInput, the id: $IDcard');
   }
 }
